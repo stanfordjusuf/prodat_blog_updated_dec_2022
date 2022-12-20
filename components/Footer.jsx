@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => (
   <footer className="footer footer-center p-10 bg-primary text-primary-content">
@@ -13,7 +13,6 @@ const Footer = () => (
     </div>
     <div>
       <div className="grid grid-flow-col gap-4">
-          <Link href="https://www.instagram.com/project_prodat/?hl=en"><a>Follow our instagram ❤️</a></Link>
       </div>
     </div>
   </footer>
