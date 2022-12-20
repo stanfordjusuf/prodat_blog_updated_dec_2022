@@ -11,7 +11,7 @@ const Footer = () => (
       <p>Copyright © 2022 - All right reserved</p>
     </div>
     <div>
-      <div className="grid grid-flow-col gap-4"/>
+      <div className="grid grid-flow-col gap-4" />
     </div>
   </footer>
 );
