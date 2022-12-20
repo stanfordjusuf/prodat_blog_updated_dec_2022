@@ -76,11 +76,9 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link href="http://prodatweb.com/">
-          <a className="btn text-white" style={{ background: "#db2877" }}>
-            Prodat Web
-          </a>
-        </Link>
+        <a href="http://prodatweb.com/" className="btn text-white" style={{ background: "#db2877" }}>
+          Prodat Web
+        </a>
       </div>
     </div>
   );
