@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 const Footer = () => (
   <footer className="footer footer-center p-10 bg-primary text-primary-content">
@@ -12,8 +11,7 @@ const Footer = () => (
       <p>Copyright © 2022 - All right reserved</p>
     </div>
     <div>
-      <div className="grid grid-flow-col gap-4">
-      </div>
+      <div className="grid grid-flow-col gap-4"/>
     </div>
   </footer>
 );
