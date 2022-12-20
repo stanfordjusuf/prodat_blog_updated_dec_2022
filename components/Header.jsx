@@ -36,6 +36,7 @@ const Header = () => {
             </svg>
           </label>
           <ul
+            tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
             style={{ background: '#f9f2ed' }}
           >
