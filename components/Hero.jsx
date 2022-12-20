@@ -5,7 +5,7 @@ export default function Hero() {
     <div
       className="hero min-h-screen mb-8"
       style={{
-        backgroundImage: `url('https://i.ibb.co/yBK1q0h/pexels-stanley-morales-1454360.jpg')`,
+        backgroundImage: 'url('https://i.ibb.co/yBK1q0h/pexels-stanley-morales-1454360.jpg')',
       }}
     >
       <div className="hero-overlay bg-opacity-60" />
