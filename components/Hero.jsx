@@ -8,7 +8,7 @@ export default function Hero() {
         backgroundImage: `url('https://i.ibb.co/yBK1q0h/pexels-stanley-morales-1454360.jpg')`,
       }}
     >
-      <div className="hero-overlay bg-opacity-60"/>
+      <div className="hero-overlay bg-opacity-60" />
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Welcome To Prodat Blog</h1>
