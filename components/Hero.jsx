@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Hero() {
+function Hero() {
   return (
     <div
       className="hero min-h-screen mb-8"
@@ -22,3 +22,5 @@ export default function Hero() {
     </div>
   );
 }
+
+export default Hero;
