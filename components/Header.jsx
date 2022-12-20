@@ -19,7 +19,7 @@ const Header = () => {
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <button className="btn btn-ghost lg:hidden">
+          <button type="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -36,7 +36,6 @@ const Header = () => {
             </svg>
           </button>
           <ul
-            tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
             style={{ background: '#f9f2ed' }}
           >
