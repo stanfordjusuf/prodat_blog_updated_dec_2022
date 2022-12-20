@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import Link from "next/link";
-import { getCategories } from "../services";
+import Link from 'next/link';
+import { getCategories } from '../services';
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -15,11 +15,11 @@ const Header = () => {
   return (
     <div
       className="navbar sticky top-0 z-50"
-      style={{ background: "#f9f2ed" }}
+      style={{ background: '#f9f2ed' }}
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -36,9 +36,8 @@ const Header = () => {
             </svg>
           </label>
           <ul
-            tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
-            style={{ background: "#f9f2ed" }}
+            style={{ background: '#f9f2ed' }}
           >
             <li className="text-black">
               {categories.map((category, index) => (
@@ -77,7 +76,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link href="https://prodatweb.com/">
+        <Link href="http://prodatweb.com/">
           <a className="btn text-white" style={{ background: "#db2877" }}>
             Prodat Web
           </a>
