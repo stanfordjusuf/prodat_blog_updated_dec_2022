@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import Link from "next/link";
-import { getCategories } from "../services";
+import Link from 'next/link';
+import { getCategories } from '../services';
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -13,7 +13,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="navbar sticky top-0 z-50" style={{ background: "#f9f2ed" }}>
+    <div className="navbar sticky top-0 z-50" style={{ background: '#f9f2ed' }}>
       <div className="navbar-start">
         <div className="dropdown">
           <button
@@ -40,7 +40,7 @@ const Header = () => {
             type="button"
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
-            style={{ background: "#f9f2ed" }}
+            style={{ background: '#f9f2ed' }}
           >
             <ul>
               <li className="text-black">
@@ -84,7 +84,7 @@ const Header = () => {
         <a
           href="http://prodatweb.com/"
           className="btn text-white"
-          style={{ background: "#db2877" }}
+          style={{ background: '#db2877' }}
         >
           Prodat Web
         </a>
@@ -94,5 +94,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
