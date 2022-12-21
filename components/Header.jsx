@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import Link from 'next/link';
-import { getCategories } from '../services';
+import Link from "next/link";
+import { getCategories } from "../services";
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -13,13 +13,14 @@ const Header = () => {
   }, []);
 
   return (
-    <div
-      className="navbar sticky top-0 z-50"
-      style={{ background: '#f9f2ed' }}
-    >
+    <div className="navbar sticky top-0 z-50" style={{ background: "#f9f2ed" }}>
       <div className="navbar-start">
         <div className="dropdown">
-          <button type="button" className="btn btn-ghost lg:hidden">
+          <button
+            tabIndex={0}
+            type="button"
+            className="btn btn-ghost lg:hidden"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -35,20 +36,24 @@ const Header = () => {
               />
             </svg>
           </button>
-          <ul
+          <button
+            type="button"
+            tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
-            style={{ background: '#f9f2ed' }}
+            style={{ background: "#f9f2ed" }}
           >
-            <li className="text-black">
-              {categories.map((category, index) => (
-                <Link key={index} href={`/category/${category.slug}`}>
-                  <span className="md:float-right mt-2 align-middle text-orange ml-4 font-semibold cursor-pointer">
-                    {category.name}
-                  </span>
-                </Link>
-              ))}
-            </li>
-          </ul>
+            <ul>
+              <li className="text-black">
+                {categories.map((category, index) => (
+                  <Link key={index} href={`/category/${category.slug}`}>
+                    <span className="md:float-right mt-2 align-middle text-orange ml-4 font-semibold cursor-pointer">
+                      {category.name}
+                    </span>
+                  </Link>
+                ))}
+              </li>
+            </ul>
+          </button>
         </div>
         <Link href="/">
           {/* <span className="logo cursor-pointer font-bold text-4xl text-orange">Prodat ⭐️</span> */}
@@ -76,7 +81,11 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a href="http://prodatweb.com/" className="btn text-white" style={{ background: '#db2877' }}>
+        <a
+          href="http://prodatweb.com/"
+          className="btn text-white"
+          style={{ background: "#db2877" }}
+        >
           Prodat Web
         </a>
       </div>
@@ -85,3 +94,4 @@ const Header = () => {
 };
 
 export default Header;
+
