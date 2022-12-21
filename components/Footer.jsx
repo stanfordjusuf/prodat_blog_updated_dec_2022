@@ -5,7 +5,7 @@ const Footer = () => (
     <img width="50px" height="50px" src="https://i.ibb.co/tbJQrh0/logo.png" alt="logo" border="0" />
     <p className="font-bold">
       Prodat <br />
-        Est 2022
+      Est 2022
     </p>
     <p>Copyright © 2022 - All right reserved</p>
   </footer>
